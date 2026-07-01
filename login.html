@@ -1,105 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | SCMS</title>
 
-    <title>Student Login</title>
+<style>
 
-    <link rel="stylesheet" href="style.css">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:linear-gradient(rgba(8,36,79,.85),rgba(8,36,79,.85)),
+    url("images/bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.login-box{
+
+    width:400px;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+.login-box img{
+
+    width:80px;
+    margin-bottom:15px;
+
+}
+
+.login-box h1{
+
+    color:#08244f;
+    margin-bottom:10px;
+
+}
+
+.login-box p{
+
+    color:#666;
+    margin-bottom:30px;
+
+}
+
+.input-box{
+
+    margin-bottom:20px;
+    text-align:left;
+
+}
+
+.input-box label{
+
+    font-weight:bold;
+    color:#08244f;
+
+}
+
+.input-box input{
+
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+
+}
+
+.input-box input:focus{
+
+    outline:none;
+    border:2px solid #FFC72C;
+
+}
+
+button{
+
+    width:100%;
+    padding:14px;
+    background:#08244f;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:17px;
+    cursor:pointer;
+    font-weight:bold;
+
+}
+
+button:hover{
+
+    background:#FFC72C;
+    color:#08244f;
+
+}
+
+.extra{
+
+    margin-top:20px;
+    font-size:14px;
+
+}
+
+.extra a{
+
+    text-decoration:none;
+    color:#08244f;
+    font-weight:bold;
+
+}
+
+.extra a:hover{
+
+    color:#FFC72C;
+
+}
+
+.back{
+
+    margin-top:25px;
+
+}
+
+.back a{
+
+    text-decoration:none;
+    color:#08244f;
+    font-weight:bold;
+
+}
+
+.back a:hover{
+
+    color:#FFC72C;
+
+}
+
+</style>
 
 </head>
+
 <body>
-
-<nav>
-
-    <div class="logo">
-
-        <img src="images/logo.png" alt="Logo">
-
-        <h2>SCMS</h2>
-
-    </div>
-
-    <ul>
-
-        <li><a href="#">Home</a></li>
-
-        <li><a href="#">About</a></li>
-
-        <li><a href="#">Modules</a></li>
-
-        <li><a href="#">Contact</a></li>
-
-    </ul>
-
-    <button>Login</button>
-
-</nav>
-<section class="login-section">
 
 <div class="login-box">
 
-<img src="images/logo.png" class="login-logo">
+<img src="images/logo.png" alt="SCMS Logo">
 
-<h2>Student Login</h2>
+<h1>Welcome Back</h1>
 
-<p>
-
-Access your Smart Campus Dashboard
-
-</p>
+<p>Login to Smart Campus Management System</p>
 
 <form>
 
-<input type="text" placeholder="Username">
+<div class="input-box">
 
-<input type="password" placeholder="Password">
+<label>Username</label>
 
-<div class="options">
-
-<label>
-
-<input type="checkbox">
-
-Remember Me
-
-</label>
-
-<a href="#">
-
-Forgot Password?
-
-</a>
+<input type="text" placeholder="Enter Username">
 
 </div>
 
-<button>
+<div class="input-box">
 
-LOGIN
+<label>Password</label>
 
-</button>
+<input type="password" placeholder="Enter Password">
+
+</div>
+
+<button type="submit">Login</button>
 
 </form>
 
-<p>
+<div class="extra">
 
-Don't have an account?
-
-<a href="#">
-
-Register
-
-</a>
-
-</p>
+<p>Forgot Password? <a href="#">Click Here</a></p>
 
 </div>
 
-</section>
+<div class="back">
+
+<a href="index.html">← Back to Home</a>
+
+</div>
+
+</div>
+
 </body>
 
 </html>
