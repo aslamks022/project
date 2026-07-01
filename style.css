@@ -1,0 +1,128 @@
+.welcome{
+
+padding:60px;
+text-align:center;
+background:#08244f;
+color:white;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+padding:50px;
+
+}
+
+.card{
+
+background:white;
+padding:30px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.card h1{
+
+font-size:40px;
+margin:15px 0;
+color:#FFC72C;
+
+}
+
+.actions{
+
+padding:50px;
+
+}
+
+.actions h2{
+
+text-align:center;
+margin-bottom:30px;
+
+}
+
+.action-grid{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+
+}
+
+.box{
+
+background:#08244f;
+color:white;
+padding:35px;
+text-align:center;
+text-decoration:none;
+border-radius:10px;
+font-size:22px;
+transition:.3s;
+
+}
+
+.box:hover{
+
+background:#FFC72C;
+color:#08244f;
+
+}
+
+.notifications{
+
+padding:50px;
+
+}
+
+.notifications h2{
+
+text-align:center;
+margin-bottom:25px;
+
+}
+
+.notifications ul{
+
+list-style:none;
+
+}
+
+.notifications li{
+
+background:white;
+padding:15px;
+margin:15px 0;
+border-left:6px solid #FFC72C;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+}
+
+.events{
+
+padding:50px;
+
+}
+
+.events h2{
+
+text-align:center;
+margin-bottom:25px;
+
+}
+
+.event{
+
+background:white;
+padding:20px;
+margin:20px 0;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+}

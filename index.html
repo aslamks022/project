@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCMS | Smart Campus Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+/* Navigation */
+
+nav{
+    width:100%;
+    background:#08244f;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 70px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:60px;
+}
+
+.logo h2{
+    color:white;
+    margin-left:15px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin:0 18px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#FFC72C;
+}
+
+.login-btn{
+    background:#FFC72C;
+    color:#08244f;
+    padding:10px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(8,36,79,.8),rgba(8,36,79,.8)),
+    url("images/bg.jpg");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    margin:20px auto;
+    width:70%;
+    font-size:20px;
+    line-height:30px;
+}
+
+.hero a{
+    display:inline-block;
+    margin-top:20px;
+    background:#FFC72C;
+    color:#08244f;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+/* Features */
+
+.features{
+
+    padding:70px;
+
+}
+
+.features h2{
+
+    text-align:center;
+    color:#08244f;
+    margin-bottom:50px;
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+
+}
+
+.card{
+
+background:white;
+padding:30px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.card h3{
+
+margin:15px 0;
+color:#08244f;
+
+}
+
+.card p{
+
+color:#555;
+
+}
+
+/* Stats */
+
+.stats{
+
+background:#08244f;
+color:white;
+padding:60px;
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+text-align:center;
+
+}
+
+.stats h1{
+
+font-size:45px;
+color:#FFC72C;
+
+}
+
+/* CTA */
+
+.cta{
+
+padding:80px;
+text-align:center;
+background:white;
+
+}
+
+.cta h2{
+
+color:#08244f;
+margin-bottom:20px;
+
+}
+
+.cta a{
+
+text-decoration:none;
+background:#08244f;
+color:white;
+padding:15px 35px;
+border-radius:5px;
+
+}
+
+/* Footer */
+
+footer{
+
+background:#08244f;
+color:white;
+text-align:center;
+padding:20px;
+
+}
+
+    </style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+<img src="images/logo.png">
+
+<h2>SCMS</h2>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="library.html">Library</a></li>
+<li><a href="food.html">Food</a></li>
+<li><a href="attendance.html">Attendance</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<a href="login.html" class="login-btn">Login</a>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>SMART CAMPUS MANAGEMENT SYSTEM</h1>
+
+<p>
+
+One Digital Platform for Students, Faculty and Administration.
+Manage Attendance, Library Services, Food Ordering and Academic Activities with ease.
+
+</p>
+
+<a href="dashboard.html">Explore Dashboard</a>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Campus Services</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📚 Library</h3>
+
+<p>Search books, issue books and manage your library records.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🍔 Food Ordering</h3>
+
+<p>Order food from the campus cafeteria with one click.</p>
+
+</div>
+
+<div class="card">
+
+<h3>📅 Attendance</h3>
+
+<p>Track attendance and monitor eligibility instantly.</p>
+
+</div>
+
+<div class="card">
+
+<h3>👨‍🎓 Student Portal</h3>
+
+<p>View profile, marks, announcements and notifications.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div>
+
+<h1>5000+</h1>
+
+<p>Students</p>
+
+</div>
+
+<div>
+
+<h1>250+</h1>
+
+<p>Faculty</p>
+
+</div>
+
+<div>
+
+<h1>120+</h1>
+
+<p>Classrooms</p>
+
+</div>
+
+<div>
+
+<h1>24/7</h1>
+
+<p>Online Services</p>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Experience a Smarter Campus</h2>
+
+<p>Everything you need for campus life in one place.</p>
+
+<br>
+
+<a href="login.html">Get Started</a>
+
+</section>
+
+<footer>
+
+<p>© 2026 Smart Campus Management System | Amity University Bengaluru</p>
+
+</footer>
+
+</body>
+
+</html>

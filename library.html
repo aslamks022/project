@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Library - SCMS</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#f5f7fb}
+nav{display:flex;justify-content:space-between;align-items:center;background:#081B3A;padding:18px 60px}
+nav a{color:#fff;text-decoration:none;margin:0 12px;font-weight:bold}
+.logo{color:#FFC107;font-size:28px;font-weight:bold}
+.hero{background:#081B3A;color:#fff;text-align:center;padding:70px 20px}
+.hero h1{font-size:48px}.search{text-align:center;padding:30px}
+.search input{width:420px;padding:14px}.search button{padding:14px 28px;background:#FFC107;border:none}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:40px}
+.card{background:#fff;padding:25px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,.15)}
+.card h3{color:#081B3A}.table{padding:40px}
+table{width:100%;border-collapse:collapse;background:#fff}
+th{background:#081B3A;color:#fff}th,td{padding:15px;border:1px solid #ddd;text-align:center}
+button{background:#FFC107;border:none;padding:10px 18px;border-radius:6px}
+footer{background:#06152d;color:#fff;text-align:center;padding:35px;margin-top:40px}
+</style></head><body>
+<nav><div class="logo">SCMS</div><div><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a href="library.html">Library</a><a href="food.html">Food</a><a href="attendance.html">Attendance</a></div></nav>
+<section class="hero"><h1>Digital Library</h1><p>Search, issue and manage books easily.</p></section>
+<div class="search"><input placeholder="Search books..."><button>Search</button></div>
+<section class="cards">
+<div class="card"><h3>📚 Available Books</h3><p>2,500+ Books</p></div>
+<div class="card"><h3>📖 Issued Books</h3><p>120 Active Issues</p></div>
+<div class="card"><h3>⭐ Popular Books</h3><p>Programming & AI</p></div>
+<div class="card"><h3>🏆 Categories</h3><p>CS, AI, Math, Literature</p></div>
+</section>
+<div class="table">
+<table><tr><th>Book</th><th>Author</th><th>Status</th><th>Action</th></tr>
+<tr><td>Database System</td><td>Korth</td><td>Available</td><td><button>Issue</button></td></tr>
+<tr><td>Python Programming</td><td>Mark Lutz</td><td>Issued</td><td><button>Return</button></td></tr>
+<tr><td>Operating Systems</td><td>Galvin</td><td>Available</td><td><button>Issue</button></td></tr>
+</table></div>
+<footer><h2>Smart Campus Management System</h2><p>© 2026 SCMS</p></footer>
+</body></html>
+

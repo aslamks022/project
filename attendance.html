@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance | SCMS</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+/* Navigation */
+
+nav{
+    background:#08244f;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:55px;
+}
+
+.logo h2{
+    color:white;
+    margin-left:15px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 18px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#FFC72C;
+}
+
+.login-btn{
+    background:#FFC72C;
+    color:#08244f;
+    padding:10px 20px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Header */
+
+.header{
+    background:#08244f;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.header h1{
+    font-size:42px;
+}
+
+.header p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+/* Summary Cards */
+
+.summary{
+    width:90%;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.card h2{
+    color:#08244f;
+    margin-bottom:15px;
+}
+
+.card h1{
+    color:#FFC72C;
+    font-size:42px;
+}
+
+/* Table */
+
+.table-section{
+    width:90%;
+    margin:40px auto;
+}
+
+.table-section h2{
+    text-align:center;
+    color:#08244f;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+th{
+    background:#08244f;
+    color:white;
+    padding:15px;
+}
+
+td{
+    text-align:center;
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f1f1f1;
+}
+
+.good{
+    color:green;
+    font-weight:bold;
+}
+
+.average{
+    color:orange;
+    font-weight:bold;
+}
+
+/* Notice */
+
+.notice{
+    width:90%;
+    margin:40px auto;
+    background:white;
+    padding:25px;
+    border-left:6px solid #FFC72C;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.notice h2{
+    color:#08244f;
+    margin-bottom:15px;
+}
+
+.notice p{
+    margin:10px 0;
+}
+
+/* Button */
+
+.button{
+    text-align:center;
+    margin:40px;
+}
+
+.button a{
+    text-decoration:none;
+    background:#08244f;
+    color:white;
+    padding:15px 30px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.button a:hover{
+    background:#FFC72C;
+    color:#08244f;
+}
+
+/* Footer */
+
+footer{
+    margin-top:50px;
+    background:#08244f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<img src="images/logo.png">
+<h2>SCMS</h2>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="library.html">Library</a></li>
+<li><a href="food.html">Food</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<a href="login.html" class="login-btn">Logout</a>
+
+</nav>
+
+<section class="header">
+
+<h1>Attendance Portal</h1>
+
+<p>Track your attendance and stay eligible for examinations.</p>
+
+</section>
+
+<section class="summary">
+
+<div class="card">
+
+<h2>Overall Attendance</h2>
+
+<h1>92%</h1>
+
+</div>
+
+<div class="card">
+
+<h2>Classes Attended</h2>
+
+<h1>46</h1>
+
+</div>
+
+<div class="card">
+
+<h2>Classes Conducted</h2>
+
+<h1>50</h1>
+
+</div>
+
+</section>
+
+<section class="table-section">
+
+<h2>Attendance Record</h2>
+
+<table>
+
+<tr>
+
+<th>Subject</th>
+
+<th>Attended</th>
+
+<th>Total</th>
+
+<th>Percentage</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>Mathematics</td>
+
+<td>18</td>
+
+<td>20</td>
+
+<td>90%</td>
+
+<td class="good">Eligible</td>
+
+</tr>
+
+<tr>
+
+<td>Programming</td>
+
+<td>20</td>
+
+<td>20</td>
+
+<td>100%</td>
+
+<td class="good">Excellent</td>
+
+</tr>
+
+<tr>
+
+<td>Physics</td>
+
+<td>15</td>
+
+<td>18</td>
+
+<td>83%</td>
+
+<td class="good">Good</td>
+
+</tr>
+
+<tr>
+
+<td>English</td>
+
+<td>17</td>
+
+<td>18</td>
+
+<td>94%</td>
+
+<td class="good">Eligible</td>
+
+</tr>
+
+<tr>
+
+<td>Chemistry</td>
+
+<td>12</td>
+
+<td>18</td>
+
+<td>67%</td>
+
+<td class="average">Low</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<section class="notice">
+
+<h2>Attendance Notice</h2>
+
+<p>✔ Minimum attendance required to appear for examinations is <b>75%</b>.</p>
+
+<p>✔ Students maintaining more than <b>90%</b> attendance receive appreciation certificates.</p>
+
+<p>✔ Contact your class mentor if your attendance falls below the required percentage.</p>
+
+</section>
+
+<div class="button">
+
+<a href="dashboard.html">← Back to Dashboard</a>
+
+</div>
+
+<footer>
+
+<p>© 2026 Smart Campus Management System | Amity University Bengaluru</p>
+
+</footer>
+
+</body>
+</html>
